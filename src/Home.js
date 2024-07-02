@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
-import img1 from './Images/IMG_20240530_170850.jpg';
+import img1 from './Images/IMG_20240623_070844.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
  import './App.css';
 const Home =()=>{
   const scrollToBottom = () => {
@@ -10,7 +12,7 @@ const Home =()=>{
     });
   };
   useEffect(() => {
-    const options = ['web developer', 'designer', 'affiliate marketer'];
+    const options = ['Photographer', 'Event photographer', 'Videographer'];
 
     const typed = new Typed('.multiple-text', {
       strings: options,
@@ -32,15 +34,15 @@ const Home =()=>{
 <div className="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
   <h3 className='text-white'>Hello It's Me</h3>
   <h1 className='text-capitalize text-white fw-bolder'>savan naik</h1>
-  <h3 className='text-white'>And I'm a <span className="multiple-text"></span></h3>
-  <p className="text-capitalize text-grey mt-1 mb-10 text-center text-lg-start">need to start your businees to go online with a professional website contact us</p>
+  <h3 className='text-white'>And I'm a <span className="multiple-text text-transform-capitalize"></span></h3>
+  <p className="text-capitalize text-grey mt-1 mb-10 text-center text-lg-start">Capturing Moments: The Art, Craft, and Vision of a Photographer's Journey</p>
   <div className="text-center text-lg-start">
   <button onClick={scrollToBottom} className="text-capitalize btn btn-primary px-5 py-2 scroll-button">contact us</button>
   </div>
 </div>
   <div className='col-12 col-md-12 col-lg-6'>
 <div className='text-center text-lg-end w-100 text-md-center img-padding'>
-<img src={img1} alt='portfolio img img-fluid' className='portfolio-img'/>
+<LazyLoadImage effect="blur" src={img1} loading="lazy" alt='portfolio img img-fluid' className='portfolio-img lazy-load-image'/>
 </div>
 </div>  
 </div>

@@ -4,12 +4,11 @@ import About from './About';
 import Service from './Service';
 import Contact from './Contact';
 import Professional from './Professional';
-import External from './Externalservice';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom";
  import Navbar from "./Navbar";
-const App =()=>{
+const App =() => {
   return (
     <>
       <Navbar/>
@@ -20,9 +19,8 @@ const App =()=>{
     <Route path="/contact" element={<Contact/>}/>
       </Routes>
     <Service/>
-    <About/>
-    <Professional/> 
-    <External/>
+    <Professional/>
+     <About/>
     <Contact/>
     </>
   );

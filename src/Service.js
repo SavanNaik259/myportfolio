@@ -1,8 +1,10 @@
 import React from "react";
-import simg1 from './Images/Website.png';
-import simg2 from './Images/3D Website Design Model Browser Layout With Pencil.png';
-import simg3 from './Images/Social Media Marketing.png';
-const Service = () => {
+import simg1 from './Images/IMG_20240629_184402.jpg';
+import simg2 from './Images/pexels-sandro-crepulja-1714970-3352398.jpg';
+import simg3 from './Images/IMG_20240629_184452.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+const Service = ({ images }) => {
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
@@ -21,10 +23,11 @@ const Service = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="d-flex justify-content-center align-items-center">
                 <div className="card service-card style={{ maxWidth: '10rem' }}">
-                  <img src={simg1} className="card-img-top" alt="..." />
+                
+                 <LazyLoadImage effect="blur" src={simg1} className="card-img-top lazy-load-image" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title mt-3 text-capitalize">web development</h5>
-                    <p className="card-text mt-2 mb-3 text-capitalize">Mastering Modern Website Development: Trends, Tools, and Techniques</p>
+                    <h5 className="card-title mt-3 text-capitalize">portrait photography</h5>
+                    <p className="card-text mt-2 mb-3 text-capitalize">Portraits of Life: The Art of Capturing Human Essence</p>
                     <div className="text-lg-start">
                       <button onClick={scrollToBottom} className="text-capitalize btn btn-primary scroll-button">get Service</button>
                     </div>
@@ -35,10 +38,10 @@ const Service = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="d-flex justify-content-center align-items-center">
                 <div className="card service-card style={{ maxWidth: '10rem' }}">
-                  <img src={simg2} className="card-img-top" alt="..." />
+                 <LazyLoadImage effect="blur" src={simg2} className="card-img-top lazy-load-image" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title mt-3 text-capitalize">web design</h5>
-                    <p className="card-text mt-2 mb-3 text-capitalize">Exceptional Web Design Services: Crafting Visually Stunning and User-Friendly Sites</p>
+                    <h5 className="card-title mt-3 text-capitalize">Event photography</h5>
+                    <p className="card-text mt-2 mb-3">Moments in Time: The Art of Event Photography</p>
                     <div className="text-lg-start">
                       <button onClick={scrollToBottom} className="text-capitalize btn btn-primary scroll-button">get Service</button>
                     </div>
@@ -50,10 +53,11 @@ const Service = () => {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="d-flex justify-content-center align-items-center">
                 <div className="card service-card style={{ maxWidth: '10rem' }}">
-                  <img src={simg3} className="card-img-top" alt="..." />
+                 <LazyLoadImage effect="blur" src={simg3} className="card-img-top lazy-load-image" alt="..." />
+                   <img src={simg3} alt='p' />
                   <div className="card-body">
-                    <h5 className="card-title mt-3 text-capitalize">digital Marketing</h5>
-                    <p className="card-text mt-2 mb-3 text-capitalize">Transform Your Business with Expert Digital Marketing Services</p>
+                    <h5 className="card-title mt-3 text-capitalize">Video graphy </h5>
+                    <p className="card-text mt-2 mb-3 text-capitalize">Stories in Motion: The Art of Videography</p>
                     <div className="text-lg-start">
                       <button onClick={scrollToBottom} className="text-capitalize btn btn-primary scroll-button">get Service</button>
                     </div>

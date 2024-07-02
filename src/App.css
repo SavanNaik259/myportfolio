@@ -59,10 +59,26 @@ p{
 .text-grey{
   color: var(--text-primary-color)!important;
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lazy-load-image {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
 .portfolio-img{
-  width: 22rem;
+  height:36vh!important;
+  width:80vw!important;
    border:5px solid white; 
-  border-radius: 20rem;
+  border-radius:50%;
 }
 .hero-section .container{
   display: grid;
@@ -113,9 +129,12 @@ p{
 }
 .service-card{
   display:grid;
-  width: 82vw!important;
+  width: 85vw!important;
   margin-bottom:3rem;
 transition:.5s ease;
+}
+.card-img-top{
+  height:85vw;
 }
 .service-card:hover{
   border:2px solid black!important;
@@ -129,6 +148,8 @@ transition:.5s ease;
   align-items: center;
 }
 .a-img{
+  border-radius:40%!important;
+  height:15rem!important;
   width: 17rem!important;
   border:2px solid black;
   border-radius: 2rem;
@@ -153,15 +174,27 @@ transition:.5s ease;
   fill: #FFFFFF;
 }
 /*professional*/
+.P-portfolio-img{
+  height:30vh;
+  width:60vw;
+  border:3px solid white; 
+  border-radius:30%;
+}
 .professional-width{
   padding: 2.5rem;
 }
 /*contact*/
-.contact-form{
-  width: 50vw;
+.map-form{
+  width:100vw;
+}
+.form-con{
+  width:70vw!important;
 }
 .end-width{
   margin-bottom: 35vw;
+}
+.btn-width{
+  width:30%;
 }
 /*responsive*/
     @media screen and (max-width: 991px) {
@@ -187,15 +220,11 @@ transition:.5s ease;
   }
   .contact-section{
     height:auto!important;
-    padding: 50px;
+    padding: 90px;
   }
     }
 @media screen and (max-width: 601px) {
   .navbar-brand{
     font-size: 1.5rem!important;
-  }
-  .contact-form{
-    padding: 5px;
-    width: 60vw;
   }
 }
