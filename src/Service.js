@@ -1,6 +1,6 @@
 import React from "react";
 import simg1 from './Images/Website.png';
-import simg2 from './Images/pexels-sandro-crepulja-1714970-3352398.jpg';
+import simg2 from './Images/3D Website Design Model Browser Layout With Pencil.png';
 import simg3 from './Images/IMG_20240629_184452.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
