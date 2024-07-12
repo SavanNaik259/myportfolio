@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
-import img1 from './Images/IMG_20240623_070844.jpg';
+import img1 from './Images/IMG_20240530_170850.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
  import './App.css';
@@ -12,7 +12,7 @@ const Home =()=>{
     });
   };
   useEffect(() => {
-    const options = ['Photographer', 'Event photographer', 'Videographer'];
+    const options = ['Web developer', 'Web designer', 'Affiliate marketer'];
 
     const typed = new Typed('.multiple-text', {
       strings: options,
