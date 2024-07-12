@@ -4,7 +4,7 @@ import simg2 from './Images/3D Website Design Model Browser Layout With Pencil.p
 import simg3 from './Images/Affiliate Marketing.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-const Service = ({ images }) => {
+const Service = () => {
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
