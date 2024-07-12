@@ -54,7 +54,6 @@ const Service = ({ images }) => {
               <div className="d-flex justify-content-center align-items-center">
                 <div className="card service-card style={{ maxWidth: '10rem' }}">
                  <LazyLoadImage effect="blur" src={simg3} className="card-img-top lazy-load-image" alt="..." />
-                   <img src={simg3} alt='p' />
                   <div className="card-body">
                     <h5 className="card-title mt-3 text-capitalize">Video graphy </h5>
                     <p className="card-text mt-2 mb-3 text-capitalize">Stories in Motion: The Art of Videography</p>
