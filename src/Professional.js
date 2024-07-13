@@ -16,7 +16,7 @@ const Professional =()=>{
 <div className="row professional-row">
 <div className="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
 <h2 className='text-capitalize text-white text-center text-lg-start'>step to build a successful digital product </h2>
-<p className="text-capitalize text-grey mt-1 mb-10 text-center text-lg-start">Capturing Moments: The Art, Craft, and Vision of a Photographer's Journey</p>
+<p className="text-capitalize text-grey mt-1 mb-10 text-center text-lg-start">Need to start your startup to go online with a professional website, Contact us</p>
 <div className="text-lg-start">
                       <button onClick={scrollToBottom} className="text-capitalize btn btn-primary scroll-button">get Service</button>
                     </div>
