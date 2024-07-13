@@ -35,7 +35,7 @@ const Home =()=>{
   <h3 className='text-white'>Hello It's Me</h3>
   <h1 className='text-capitalize text-white fw-bolder'>savan naik</h1>
   <h3 className='text-white'>And I'm a <span className="multiple-text text-transform-capitalize"></span></h3>
-  <p className="text-capitalize text-grey mt-1 mb-10 text-center text-lg-start">Capturing Moments: The Art, Craft, and Vision of a Photographer's Journey</p>
+  <p className="text-capitalize text-grey mt-1 mb-10 text-center text-lg-start">Need to start your startup to go online with a professional website, Contact us</p>
   <div className="text-center text-lg-start">
   <button onClick={scrollToBottom} className="text-capitalize btn btn-primary px-5 py-2 scroll-button">contact us</button>
   </div>
