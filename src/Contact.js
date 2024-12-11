@@ -14,16 +14,7 @@ const Contact =()=>{
            <hr className='w-50 mx-auto text-white'/>
          </div>
          <div>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.5763050857086!2d77.5897129!3d12.9989294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe60ce1a0140d7%3A0x3ceab1e851eb586a!2sKarwar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1719659856903!5m2!1sen!2sin"
-        width="100%"
-        height="450"
-        className="map-form row-width"
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Google Maps Embed"
-      ></iframe>
+    
           </div>
   <div className='container'>
              <form action="https://formspree.io/f/myzggwqv" method="post">
